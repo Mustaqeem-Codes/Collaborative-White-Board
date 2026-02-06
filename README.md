@@ -14,7 +14,7 @@ A Windows Forms application built with C# that provides a digital whiteboard for
 ## Requirements
 
 - Windows Operating System
-- .NET 6.0 SDK or later
+- .NET 8.0 SDK or later
 - Visual Studio 2019/2022 Community (or any edition) or Visual Studio Code with C# extension
 
 ## Getting Started
@@ -70,7 +70,7 @@ CollaborativeWhiteBoard/
 ## Technologies Used
 
 - **Language**: C#
-- **Framework**: .NET 6.0
+- **Framework**: .NET 8.0
 - **UI Framework**: Windows Forms
 - **IDE**: Visual Studio Community
 

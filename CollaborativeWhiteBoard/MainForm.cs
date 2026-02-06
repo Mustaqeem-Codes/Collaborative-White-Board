@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -10,7 +9,6 @@ namespace CollaborativeWhiteBoard
     {
         private bool isDrawing = false;
         private Point previousPoint;
-        private List<Tuple<Point, Point, Color, int>> lines = new List<Tuple<Point, Point, Color, int>>();
         private Color currentColor = Color.Black;
         private int currentThickness = 2;
         private Bitmap? drawingBitmap;
@@ -53,7 +51,6 @@ namespace CollaborativeWhiteBoard
                         drawingGraphics.DrawLine(pen, previousPoint, e.Location);
                     }
                     
-                    lines.Add(new Tuple<Point, Point, Color, int>(previousPoint, e.Location, currentColor, currentThickness));
                     previousPoint = e.Location;
                     drawingPanel.Invalidate();
                 }
@@ -136,7 +133,6 @@ namespace CollaborativeWhiteBoard
             if (MessageBox.Show("Are you sure you want to clear the board?", "Clear Board", 
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                lines.Clear();
                 if (drawingGraphics != null)
                 {
                     drawingGraphics.Clear(Color.White);
@@ -182,9 +178,6 @@ namespace CollaborativeWhiteBoard
                     try
                     {
                         Image loadedImage = Image.FromFile(openDialog.FileName);
-                        
-                        // Clear existing drawing
-                        lines.Clear();
                         
                         if (drawingGraphics != null)
                         {
