@@ -19,6 +19,12 @@ A Windows Forms application built with C# that provides a digital whiteboard for
 
 ## Getting Started
 
+For detailed installation instructions, see [INSTALLATION.md](INSTALLATION.md).
+
+For a comprehensive guide on how to use the application, see [USER_GUIDE.md](USER_GUIDE.md).
+
+### Quick Start
+
 ### Option 1: Using Visual Studio
 
 1. Clone or download this repository
@@ -82,11 +88,11 @@ Potential features for future versions:
 
 ## Contributing
 
-Feel free to fork this repository and submit pull requests with improvements or bug fixes.
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to this project.
 
 ## License
 
-This project is open source and available for educational purposes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
 
